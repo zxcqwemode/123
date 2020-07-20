@@ -12,4 +12,4 @@
 >         | '-' |   
 >         +-----+
 
-See XML-comments for method [PrintFace](/PrintFace/Program.cs#L26).
+See XML-comments for method [PrintFace](/PrintFace/Program.cs#L33).
