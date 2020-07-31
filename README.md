@@ -8,4 +8,4 @@
 >         |  ^  |                                                 
 >         | '-' |   
 >         +-----+
-See XML-comments for method [PrintFace](/PrintFace/Program.cs#L33).
+*The task definition is given in the XML-comments for the [PrintFace](/PrintFace/Program.cs#L33) method.*
