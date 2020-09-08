@@ -10,7 +10,7 @@ namespace PrintFace
         /// <param name="args">Command line arguments.</param>
         public static void Main(string[] args)
         {
-            Console.WriteLine("  Hello, world! ");
+            Console.WriteLine("  Hello, University! ");
         }
 
         /// <summary>
