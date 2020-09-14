@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 namespace PrintFace
 {
@@ -7,8 +7,7 @@ namespace PrintFace
         /// <summary>
         /// Print "Hello, world!" in a separate line.
         /// </summary>
-        /// <param name="args">Command line arguments.</param>
-        public static void Main(string[] args)
+        public static void Main()
         {
             Console.WriteLine("  Hello, world! ");
         }
