@@ -24,7 +24,7 @@ namespace PrintFace.Tests
         [Test]
         public void Main_Tests()
         {
-            Program.Main(new string[] { });
+            Program.Main();
 
             string actual = _writer.GetStringBuilder().ToString().Trim();
 
