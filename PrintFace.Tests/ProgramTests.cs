@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.IO;
 using NUnit.Framework;
 
@@ -7,18 +7,19 @@ namespace PrintFace.Tests
     [TestFixture]
     public class ProgramTests
     {
-        private StringWriter _writer;
+        private StringWriter writer;
         
         [SetUp]
         public void SetUp()
         {
-            _writer = new StringWriter();
-            Console.SetOut(_writer);
+            this.writer = new StringWriter();
+            Console.SetOut(this.writer);
         }
         
-        [TearDown] public void Cleanup()
+        [TearDown]
+        public void Cleanup()
         {
-            _writer.Close();
+            this.writer.Close();
         }
         
         [Test]
@@ -26,7 +27,7 @@ namespace PrintFace.Tests
         {
             Program.Main();
 
-            string actual = _writer.GetStringBuilder().ToString().Trim();
+            string actual = this.writer.GetStringBuilder().ToString().Trim();
 
             string expected = "Hello, world!";
 
@@ -40,7 +41,7 @@ namespace PrintFace.Tests
         {
             Program.SayHelloUser(userName);
 
-            string actual = _writer.GetStringBuilder().ToString().Trim();
+            string actual = this.writer.GetStringBuilder().ToString().Trim();
 
             string expected = $"Hello, {userName}!";
 
@@ -52,7 +53,7 @@ namespace PrintFace.Tests
         {
             Program.PrintFace();
 
-            string actual = _writer.GetStringBuilder().ToString();
+            string actual = this.writer.GetStringBuilder().ToString();
 
             string expected = $" +\"\"\"\"\"+{Environment.NewLine}" +
                               $"(| o o |){Environment.NewLine}" +
